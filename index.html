@@ -6,7 +6,15 @@
   <title>Web Components Test</title>
 </head>
 <body>
-  <hello-world name="Pete"></hello-world>
+  <hello-world name="Pete">
+    <h1 slot="msgtext">Hello Default!</h1>
+    <p>This text will become part of the component.</p>
+  </hello-world>
+
+  <template id="hello-world">
+    <slot name="msgtext" class="hw-text"></slot>
+    <slot></slot>
+  </template>
 
   <script type="module" src="./helloworld.js"></script>
 </body>
