@@ -1,0 +1,16 @@
+{
+  "name": "web-components-test",
+  "version": "1.0.0",
+  "description": "* do it with Typescript * figure out how to pass arrays or objects as parameters/attributes (not possible in react) * template architecture * integration in angular * publish with npm * event handling between web components * architecture and filestructure",
+  "main": "helloworld.js",
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf ./built && tsc && cp ./src/index.html ./built"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
