@@ -12,6 +12,10 @@
   </hello-world>
 
   <template id="hello-world">
+    <style>
+      slot[name="msgtext"] { color: green; }
+    </style>
+
     <slot name="msgtext" class="hw-text"></slot>
     <slot></slot>
   </template>
